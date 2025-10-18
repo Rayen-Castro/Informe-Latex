@@ -48,15 +48,24 @@
 \maketitle
 
 \section {Introducción}
-\large Para este informe se explicará sobre Herencia, Clases Abstractas, Polimorfismo e Interfaces, pilares fundamentales en el núcleo de la programación orientada a objetos (POO), esto complementado con ejemplos prácticos y esquemas ilustrativos que faciliten su comprensión. Además, se incluirá una sección especializada dedicada al Method Resolution Order (MRO), un concepto importante en la herencia múltiple que determina el orden en que Python busca métodos en la jerarquía de clases.
+\large Para este informe se explicará sobre Herencia, Clases Abstractas, Polimorfismo e 
+Interfaces, pilares fundamentales en el núcleo de la programación orientada a objetos (POO),
+esto complementado con ejemplos prácticos y esquemas ilustrativos que faciliten su 
+comprensión. Además, se incluirá una sección especializada dedicada al Method Resolution 
+Order (MRO), un concepto importante en la herencia múltiple que determina el orden en que 
+Python busca métodos en la jerarquía de clases.
 
 
 \clearpage
 \section{Conceptos POO}
 
 \subsection{herencia}
-Es un mecanismo para crear nuevas clases (subclase o hijas), se basan en clases existentes porque dependen de sus elementos (padres o superclase).
-La herencia facilita la reutilización de codigo, no necesitando copiar y pegar ciertos mecanismos en una clase que, por ejemplo, pueden ya estar en otra clase, asi mismo estableciendo relaciones entre clases, donde la subclase hereda atributos y/o métodos de una superclase.
+Es un mecanismo para crear nuevas clases (subclase o hijas), se basan en clases existentes 
+porque dependen de sus elementos (padres o superclase).
+La herencia facilita la reutilización de codigo, no necesitando copiar y pegar ciertos 
+mecanismos en una clase que, por ejemplo, pueden ya estar en otra clase, asi mismo 
+estableciendo relaciones entre clases, donde la subclase hereda atributos y/o métodos de una 
+superclase.
 
 \par\vspace{1.2em} 
 
@@ -70,28 +79,41 @@ La herencia facilita la reutilización de codigo, no necesitando copiar y pegar 
 
 
 \subsection{Clases Abstractas}
-Una clase que existe solo para servir como una plantilla para las demás clases, en esta clase no se pueden crear objetos directamente, su función principal es definir una interfaz común y obligar a sus subclases a implementar métodos específicos.
+Una clase que existe solo para servir como una plantilla para las demás clases, en esta clase
+no se pueden crear objetos directamente, su función principal es definir una interfaz común y 
+obligar a sus subclases a implementar métodos específicos.
 
 \par\vspace{1.2em} 
 
 \large{{Ventajas}}
 \begin{itemize}
-    \item {Fuerza el Contrato:} Garantiza que las subclases implementen métodos importantes, asegurando una buena estructura de codigo.
-    \item {Modelo Jerárquico:} Permite organizar clases relacionadas de manera lógica, proporcionando una base común para ellas.
-    \item {Prevención de Instanciación:} Evita que el crear objetos de una clase que no tiene sentido por sí misma.
+    \item {Fuerza el Contrato:} Garantiza que las subclases implementen métodos importantes,
+    asegurando una buena estructura de codigo.
+    \item {Modelo Jerárquico:} Permite organizar clases relacionadas de manera lógica, 
+    proporcionando una base común para ellas.
+    \item {Prevención de Instanciación:} Evita que el crear objetos de una clase que no tiene 
+    sentido por sí misma.
 \end{itemize}
 
 
 \subsection{Polimorfismo}
-permite que un mismo nombre de método pueda comportarse de manera diferente según el objeto que lo invoca. Esto significa que una sola interfaz puede usarse para diferentes implementaciones. Esta característica es clave para escribir código más general y flexible, ya que permite tratar objetos de distintas clases de forma uniforme a través de una misma interfaz. El polimorfismo aparece cuando varias clases implementan el mismo método con comportamientos específicos, pero pueden ser accedidos mediante una referencia más general. Esto ayuda a ampliar el código fácilmente y a reducir la dependencia entre partes del programa.
+permite que un mismo nombre de método pueda comportarse de manera diferente según el objeto 
+que lo invoca. Esto significa que una sola interfaz puede usarse para diferentes 
+implementaciones. Esta característica es clave para escribir código más general y flexible, 
+ya que permite tratar objetos de distintas clases de forma uniforme a través de una misma 
+interfaz. El polimorfismo aparece cuando varias clases implementan el mismo método con 
+comportamientos específicos, pero pueden ser accedidos mediante una referencia más general. 
+Esto ayuda a ampliar el código fácilmente y a reducir la dependencia entre partes del 
+programa.
 
 \par\vspace{1.2em} 
 
 \large{{Ventajas}}
 \begin{itemize}
-    \item {Flexibilidad:} Permite que un programa interactúe con objetos de diferentes tipos a través de una interfaz común, sin necesidad de saber el tipo exacto de cada objeto.
-    \item {Desacoplamiento:} Reduce las dependencias directas entre las clases, lo que hace el código más modular.
-    \item {Claridad:} Simplifica el código, ya que se puede usar el mismo nombre de método (ej: $\verb|dibujar()|$) para diferentes objetos (Círculo, Cuadrado, Triángulo).
+    \item {Flexibilidad:} Permite que un programa interactúe con objetos de diferentes tipos
+    a través de una interfaz común, sin necesidad de saber el tipo exacto de cada objeto.
+    \item {Desacoplamiento:} Reduce las dependencias directas entre las clases, lo que hace 
+    el código más modular.
+    \item {Claridad:} Simplifica el código, ya que se puede usar el mismo nombre de método 
+    (ej: $\verb|dibujar()|$) para diferentes objetos (Círculo, Cuadrado, Triángulo).
 \end{itemize}
-
-\end{document}
