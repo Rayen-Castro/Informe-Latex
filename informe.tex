@@ -2,16 +2,53 @@
 \usepackage[utf8]{inputenc}
 \usepackage[spanish]{babel}
 \usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{float}
 
-
-\title{informe}
-\author{rcastro2025}
+\title{Informe de POO y control de versiones con LATEX}
+\author{Rallen Castro}
 \date{17 de Octubre 2025}
+
+\newcommand{\profesor}{Guido Mellado}
+\newcommand{\ramo}{Programación II Sección 2}
+\newcommand{\institucion}{Universidad Católica de Temuco}
+
+\makeatletter
+\renewcommand{\maketitle}{
+    \begin{titlepage} 
+    
+    \begin{flushright}
+        \raisebox{-0.5\height}{\includegraphics[width=4cm]{ing_civil-informatica_gris.png}}
+    \end{flushright}
+
+    \begin{center}
+        \vspace*{1.5cm} 
+        \LARGE \@title \\ [1.5em] 
+        \large \@author \\ [0.5em] 
+        \large \@date \\ [2em]
+    \end{center}
+    
+    \vfill 
+
+    \begin{center}
+        \hrulefill \\ [0.5em]
+        \Large \textbf{Institución:} \institucion \\ [0.5em] 
+        \Large \textbf{Ramo:} \ramo \\ [0.5em]
+        \Large \textbf{Profesor a Cargo:} \profesor \\ [0.5em] 
+        \hrulefill \\
+        
+    \end{center}
+    
+    \end{titlepage}
+}
+\makeatother
 
 \begin{document}
 
 \maketitle
 
-\section{Introduction}
+\section {Introducción}
+\large Para este informe se explicará sobre Herencia, Clases Abstractas, Polimorfismo e Interfaces, pilares fundamentales en el núcleo de la programación orientada a objetos (POO), esto complementado con ejemplos prácticos y esquemas ilustrativos que faciliten su comprensión. Además, se incluirá una sección especializada dedicada al Method Resolution Order (MRO), un concepto importante en la herencia múltiple que determina el orden en que Python busca métodos en la jerarquía de clases.
 
 \end{document}
+
