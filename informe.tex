@@ -117,3 +117,17 @@ programa.
     \item {Claridad:} Simplifica el código, ya que se puede usar el mismo nombre de método 
     (ej: $\verb|dibujar()|$) para diferentes objetos (Círculo, Cuadrado, Triángulo).
 \end{itemize}
+
+\subsubsection*{Ejemplo}
+Para ilustrar la sobrescritura, donde cada subclase define su propia implementación del método $\verb|Persona|$:
+\begin{verbatim}
+class Persona:
+    def saludar(self):
+        return "Hola, soy una persona"
+
+class Niño(Persona):
+    def saludar(self):
+        return "Hola, soy un niño" 
+\end{verbatim}
+
+\end{document}
