@@ -41,14 +41,29 @@
     
     \end{titlepage}
 }
+
+
 \makeatother
-
 \begin{document}
-
 \maketitle
 
 \section {Introducción}
 \large Para este informe se explicará sobre Herencia, Clases Abstractas, Polimorfismo e Interfaces, pilares fundamentales en el núcleo de la programación orientada a objetos (POO), esto complementado con ejemplos prácticos y esquemas ilustrativos que faciliten su comprensión. Además, se incluirá una sección especializada dedicada al Method Resolution Order (MRO), un concepto importante en la herencia múltiple que determina el orden en que Python busca métodos en la jerarquía de clases.
 
-\end{document}
 
+\clearpage
+\section{Conceptos POO}
+
+\subsection{herencia}
+Es un mecanismo para crear nuevas clases (subclase o hijas), se basan en clases existentes porque dependen de sus elementos (padres o superclase).
+La herencia facilita la reutilización de codigo, no necesitando copiar y pegar ciertos mecanismos en una clase que, por ejemplo, pueden ya estar en otra clase, asi mismo estableciendo relaciones entre clases, donde la subclase hereda atributos y/o métodos de una superclase.
+
+\subsubsection*\large{Ventajas} 
+\begin{itemize}
+    \item {Reutilización de código:} Evita tener que duplicar al heredar funcionalidades extistentes
+    \item {Extensibilidad:} Permite añadir nuevas características sin modificar la clase base.
+    \item {Organización jerárquica:} Establece relaciones naturales entre clases.
+    \item {Mantenibilidad:} Los cambios en la clase base se propagan automáticamente a las hijas.
+\end{itemize}
+
+\end{document}
