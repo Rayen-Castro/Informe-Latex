@@ -151,4 +151,22 @@ en el sistema. Además, permite cambiar componentes sin afectar el código que l
     no a una implementación".
 \end{itemize}
 
+
+\clearpage
+\section{Method Resolution Order (MRO)}
+En español; Orden de Resolución de Métodos, es un concepto vital y obligatorio en lenguajes de programación que soportan Herencia Múltiple, obviamente en este caso es python
+
+El MRO define la secuencia precisa en la que el intérprete busca un método o un atributo dentro de una jerarquía de clases cuando una subclase hereda de múltiples padres. Si no existiera este orden determinista, el programa podría fallar al encontrar múltiples implementaciones del mismo método.
+
+\vspace{1.0em}
+
+\large{Criterios de Linealización}
+\\
+Para garantizar que la búsqueda sea consistente y segura, el MRO sigue el Algoritmo de Linealización C3, el cual respeta dos principios fundamentales:
+
+\begin{itemize}
+    \item {Clase Precede a la Base:} Cualquier clase siempre debe aparecer antes que sus clases base.
+    \item {Orden de Definición:} El orden en que las clases base son especificadas en la definición de la clase debe ser respetado.
+\end{itemize}
+
 \end{document}
