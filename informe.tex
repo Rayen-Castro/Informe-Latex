@@ -130,4 +130,25 @@ class Niño(Persona):
         return "Hola, soy un niño" 
 \end{verbatim}
 
+\subsection{Interfaces}
+una forma de definir un conjunto de métodos sin tener que escribir cómo funcionan. Las 
+interfaces se centran solo en el comportamiento que una clase debe tener (el "contrato"). 
+Esto permite separar la definición del comportamiento de la forma en que se implementa. Así, 
+diferentes clases pueden cumplir con el mismo contrato sin depender unas de otras. Las 
+interfaces hacen que el diseño sea más flexible y fácil de mantener. Las clases que las usan 
+deben ofrecer todas las funciones que la interfaz pide, lo que ayuda a mantener la coherencia 
+en el sistema. Además, permite cambiar componentes sin afectar el código que los usa.
+
+\par\vspace{1.2em} 
+
+\large{Ventajas}
+\begin{itemize}
+    \item {Multitipos:} Permite que una clase implemente múltiples interfaces, modelando 
+    comportamientos diversos sin la complejidad de la herencia múltiple de implementación.
+    \item {Estándar:} Define un estándar claro y obligatorio de comunicación entre 
+    componentes del sistema.
+    \item {Simplicidad:} Fomenta el diseño basado en el principio "programar a una interfaz y 
+    no a una implementación".
+\end{itemize}
+
 \end{document}
