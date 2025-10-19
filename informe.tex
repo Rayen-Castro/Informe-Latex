@@ -169,4 +169,13 @@ Para garantizar que la búsqueda sea consistente y segura, el MRO sigue el Algor
     \item {Orden de Definición:} El orden en que las clases base son especificadas en la definición de la clase debe ser respetado.
 \end{itemize}
 
+\subsection{Fórmula del Algoritmo C3}
+La MRO de una clase $C$, denotada como $L[C]$, se define mediante la siguiente fórmula recursiva del Algoritmo C3 para una herencia de clases base $P_1, P_2, \dots, P_N$:
+\begin{equation}
+L[C] = C + \text{merge}(L[P_1], L[P_2], \dots, L[P_N], (P_1, P_2, \dots, P_N))
+\label{eq:mro_c3}
+\end{equation}
+
+La operación $\text{merge}()$ combina las linealizaciones de los padres ($L[P_i]$) y las clases padre directas ($P_i$) bajo las reglas de precedencia, resultando en una lista única y determinista que define el orden de búsqueda del método.
+
 \end{document}
